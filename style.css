@@ -417,7 +417,6 @@ main{
 
 .container_section {
     padding: 40px;
-
 }
 
 /*  Categories Section */
@@ -431,8 +430,12 @@ main{
 
 .container_section p{
     margin-bottom: 30px;
-    text-align: left;
 
+}
+
+#quote_jewelry{
+    text-align: center;
+    font-style: italic;
 }
 
 
@@ -549,7 +552,8 @@ img{
 
   .uxui_images p{
      text-align: left;
-  }
+     width: 600px;
+    }
 
   .uxui h4{
       font-size: 18px;
@@ -564,6 +568,7 @@ img{
   .uxui p{
     font-size: 18px;
     margin-top: 20px;
+    width: 600px;
   }
 
   .uxui .info{
@@ -597,25 +602,49 @@ img{
   /* UX Sections */
   .xmac_uxui_info img{
       margin-bottom: 50px;
+      max-width: 800px;
   }
+
+  .xmac_uxui_365 img{
+    margin-bottom: 50px;
+    max-width: 800px;
+}
+
+
 
   #button_uxui_365, #button_uxui_xmac{
       margin-bottom: 20px;
   }
 
-  hr{
+  .colorline{
       margin-bottom: 80px;
+      background-color: rgb(231, 231, 231);
+      height: 1px;
+      width: 1000px;
+      text-align: center;
+      margin-top: 20px;
   }
 
   /* About Section */
 
-  #me_image{
-      margin: 0 auto;
-      border-radius: 50%;
-      max-width: 300px; 
-      margin-bottom: 20px;
+  .flex_tablet{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
   }
 
+  #me_image{
+      border-radius: 50%;
+      max-width: 300px; 
+      margin-bottom: 40px;
+      text-align: center;
+  }
+
+  .linkedin{
+      height: 80px;
+      
+  }
 
 /* Responsive - 500px FONT */
 
@@ -629,44 +658,94 @@ img{
 
 /* Responsive - 1000px */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) and (max-device-width: 1200px) {
     .nav li{
+        font-size: 24px;
+        padding: 7px;
+    }
+
+    .uxui p{
         font-size: 20px;
     }
 
-    
-
-    .flex_tablet{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: start;
-        gap: 80px;
-    } 
-
-    .flex_tablet p{
-        text-align-last: left;
+    .info{
+        font-size: 22px;
     }
 
-    
+    p{
+        font-size: 20px;
 
+    }
+
+    h3{
+        font-size: 22px;
+    }
+
+    button{
+        font-size: 18px;
+
+    }
 
 }
 
 
-@media screen and (min-width: 1000px) and (max-device-width: 1044px) {
+@media screen and (min-width: 1200px) {
+
+    /* Design  */
+    .colorline{
+        display: none;
+    }
+    .uxui_images{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 100px;
+    }
+
+    .flexy1, .flexy2, .flexy3, .flexy4, .flexy5{
+        padding: 5px;
+          
+    }
+
+    /* Web  */
+    .web_images{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 100px;
+    }
+
+    /* About  */
 
     .flex_tablet{
         display: flex;
         flex-direction: row;
-        justify-content: start;
-        align-items: start;
-        gap: 80px;
-    } 
-
-    .flex_tablet p{
-        text-align-last: left;
+        gap: 50px;
+        position: relative;
     }
+
+    .flex_tablet img{
+        width: 200px;
+        
+    }
+
+    .linkedin{
+        justify-content: left;
+        align-items: left;
+        
+    }
+
+
+
+    
+
+
+
+
+
+
 
     
 

@@ -2,7 +2,7 @@
 
 // Hide all from Menu
 
-// hideAll();
+hideAll();
 removeBold();
 removeUnderline();
 removeCircleColor();
