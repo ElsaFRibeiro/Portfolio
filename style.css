@@ -626,12 +626,11 @@ img{
   }
 
   .colorline{
-      margin-bottom: 80px;
       background-color: rgb(231, 231, 231);
       height: 1px;
-      width: 1000px;
+      width: 75%;
       text-align: center;
-      margin-top: 20px;
+      margin: 20px auto 80px;
   }
 
   /* * About Section */ */
