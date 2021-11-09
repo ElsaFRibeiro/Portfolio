@@ -72,13 +72,15 @@ button:active{
 
 
 /* Menu Background Image */
+
+
 .container_menu{
     margin: 0 auto;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center;  
 }
 
 /* Menu List Circles */
@@ -88,8 +90,7 @@ button:active{
     position: absolute;
     z-index:1;
     transition: .10s ease;  
-    font-size: 0px;  
-    
+    font-size: 0px; 
 }
 
 #click_circle{
@@ -327,6 +328,7 @@ main{
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
+    overflow-x: hidden
     
 }
 
@@ -687,6 +689,7 @@ img{
         justify-content: center;
         align-items: center;
     } 
+
 
 }
   /* Responsive - 500px FONT */
