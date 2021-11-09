@@ -310,7 +310,9 @@ function coloredCirclesMenu(selector) {
             circle.style.borderColor = "#af4450";
         } else if (circle.className.includes('grey_line_0')) {
             circle.style.borderColor = "#7f9cc2";
-        } 
+        } else{
+            circle.style.borderColor = "#760b85";
+        }
     }
 }
 

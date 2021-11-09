@@ -150,8 +150,7 @@ button:active{
     transition-property: all;
     transition-property: transform;
     transition-duration: 100ms;
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
 
 
@@ -336,8 +335,8 @@ main{
     text-transform: uppercase;
     font-weight: 300;
     font-size: 65px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
 
     
 }
@@ -348,8 +347,8 @@ main{
     margin-bottom: 10px;
     font-size: 22px;
     padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
 
 }
 
@@ -359,10 +358,8 @@ main{
     padding-bottom: 50px;
     font-size: 18px;
     padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-
-    
+    padding-right: 5px;
+    padding-top: 5px; 
 }
 
 /* Intro - Colored lines over quote */
@@ -416,7 +413,9 @@ main{
 /* Categories Section */
 
 .container_section {
-    padding: 40px;
+    padding: 10px;
+    margin: 0 auto;
+
 }
 
 /*  Categories Section */
@@ -439,6 +438,9 @@ main{
 }
 
 
+
+
+
 /* Slideshow container */
 img{
     border-radius: 20px;
@@ -452,8 +454,6 @@ img{
 
   }
   
-  /* Make the images invisible by default */
-
   
   /* forward & Back buttons */
   .back, .forward {
@@ -505,6 +505,8 @@ img{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 20px;
+
   }
   
 
@@ -516,6 +518,7 @@ img{
     background-color: rgb(214, 214, 214);
     border-radius: 50%;
     transition: background-color 0.5s ease;
+
 
   }
   
@@ -544,7 +547,10 @@ img{
 
   /* Web Development, UX and Graphic Images */
 
-  
+  .flexy1, .flexy2{
+      width: 90%;
+      margin:0 auto;
+  }
   .uxuiCat img{
     width: 100%;
     border-radius: 20px;
@@ -552,7 +558,6 @@ img{
 
   .uxui_images p{
      text-align: left;
-     width: 600px;
     }
 
   .uxui h4{
@@ -568,7 +573,6 @@ img{
   .uxui p{
     font-size: 18px;
     margin-top: 20px;
-    width: 600px;
   }
 
   .uxui .info{
@@ -600,6 +604,8 @@ img{
   }
 
   /* UX Sections */
+
+  
   .xmac_uxui_info img{
       margin-bottom: 50px;
       max-width: 800px;
@@ -625,28 +631,64 @@ img{
       margin-top: 20px;
   }
 
-  /* About Section */
+  /* * About Section */ */
 
-  .flex_tablet{
+  .about{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .about p{
+    width: 400px;
+    margin: 0 auto;
+
+  }
+
+
+  .flexy6{
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: center;
+      justify-items: center;
+      position: relative;
+      width: 300px;
+      margin: 0 auto;
+
   }
 
   #me_image{
       border-radius: 50%;
-      max-width: 300px; 
-      margin-bottom: 40px;
-      text-align: center;
+      margin-bottom: 50px;  
+      height: 300px;
+
   }
 
   .linkedin{
-      height: 80px;
-      
+      width: 90px;
+      bottom: 18%;
+      right: 0%;
+      position: absolute;
   }
 
-/* Responsive - 500px FONT */
+
+/* Responsive - 380px  */
+
+
+@media screen and (min-width: 200px) and (max-device-width: 500px) {
+    .nav{
+        flex-direction: column;
+    }
+
+    .flexy6{
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    } 
+
+}
+  /* Responsive - 500px FONT */
 
 
 @media screen and (min-width: 500px) and (max-device-width: 1000px) {
@@ -713,7 +755,7 @@ img{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        align-items: center;
+        align-items: flex-start;
         gap: 100px;
     }
 
@@ -730,22 +772,6 @@ img{
         width: 200px;
         
     }
-
-    .linkedin{
-        justify-content: left;
-        align-items: left;
-        
-    }
-
-
-
-    
-
-
-
-
-
-
 
     
 
