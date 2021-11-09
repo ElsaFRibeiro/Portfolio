@@ -80,7 +80,7 @@ button:active{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;  
+    text-align: center;
 }
 
 /* Menu List Circles */
@@ -681,6 +681,8 @@ img{
 @media screen and (min-width: 200px) and (max-device-width: 500px) {
     .nav{
         flex-direction: column;
+        overflow-x: hidden
+
     }
 
     .flexy6{
