@@ -292,6 +292,7 @@ function removeCircleColor() {
     const coloredCircle = document.querySelectorAll('.grey_line');
     for (const circle of coloredCircle) {
         circle.style.borderColor = "none";
+
     }
 }  
 
